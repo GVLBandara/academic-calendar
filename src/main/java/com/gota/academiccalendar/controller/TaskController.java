@@ -2,9 +2,9 @@ package com.gota.academiccalendar.controller;
 
 import com.gota.academiccalendar.model.Task;
 import com.gota.academiccalendar.repository.TaskCollectionRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -19,5 +19,15 @@ public class TaskController {
     @GetMapping("")
     public List<Task> findAll(){
         return repository.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public Task findById(@PathVariable int id){
+        return repository.findById(id).orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Task not found!"));
+    }
+
+    @PostMapping("")
+    public void create(@RequestBody Task task){
+        repository.save(task);
     }
 }

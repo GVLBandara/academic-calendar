@@ -13,18 +13,23 @@ import java.util.Optional;
 
 @Repository
 public class TaskCollectionRepository {
-    private final List<Task> task = new ArrayList<>();
+    private final List<Task> taskList = new ArrayList<>();
 
     public TaskCollectionRepository() {
     }
 
     public List<Task> findAll() {
-        return task;
+        return taskList;
     }
 
     public Optional<Task> findById(Integer id) {
-        return task.stream().filter(c-> c.id().equals(id)).findFirst();
+        return taskList.stream().filter(c-> c.id().equals(id)).findFirst();
     }
+
+    public void save(Task task){
+        taskList.add(task);
+    }
+
     @PostConstruct
     private void init() {
         Task t = new Task(1,
@@ -36,6 +41,6 @@ public class TaskCollectionRepository {
                 LocalDateTime.now(),
                 null,
                 "url");
-        task.add(t);
+        taskList.add(t);
     }
 }
