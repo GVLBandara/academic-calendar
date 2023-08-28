@@ -1,4 +1,6 @@
 HELP.md
+test.http
+src/main/java/com/gota/academiccalendar/Test.java
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

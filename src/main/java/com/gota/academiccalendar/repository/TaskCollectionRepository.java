@@ -27,7 +27,13 @@ public class TaskCollectionRepository {
     }
 
     public void save(Task task){
-        taskList.add(task);
+        Optional<Task> oldTask = taskList.stream().filter(t -> t.id().equals(task.id())).findFirst();
+        if (oldTask.isPresent()) {
+            int index = taskList.indexOf(oldTask.get());
+            taskList.set(index, task);
+        }else {
+            taskList.add(task);
+        }
     }
 
     @PostConstruct
@@ -42,5 +48,13 @@ public class TaskCollectionRepository {
                 null,
                 "url");
         taskList.add(t);
+    }
+
+    public boolean existById(int id) {
+        return taskList.stream().anyMatch(c -> c.id().equals(id));
+    }
+
+    public void delete(int id) {
+        taskList.removeIf(t-> t.id().equals(id));
     }
 }

@@ -26,8 +26,27 @@ public class TaskController {
         return repository.findById(id).orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Task not found!"));
     }
 
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("")
     public void create(@RequestBody Task task){
         repository.save(task);
+    }
+
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @PutMapping("/{id}")
+    public void update(@RequestBody Task task,@PathVariable int id){
+        if(!repository.existById(id)){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Task not found!");
+        }
+        if(task.id() != id){
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "IDs does not match!");
+        }
+        repository.save(task);
+    }
+
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable int id){
+        repository.delete(id);
     }
 }
