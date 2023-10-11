@@ -39,7 +39,7 @@ public class TaskCollectionRepository {
     @PostConstruct
     private void init() {
         Task t = new Task(1,
-                "name",
+                "title",
                 "desc",
                 Status.SCHEDULED,
                 Type.EXAM,
@@ -50,7 +50,7 @@ public class TaskCollectionRepository {
         taskList.add(t);
     }
 
-    public boolean existById(int id) {
+    public boolean existsById(int id) {
         return taskList.stream().anyMatch(c -> c.id().equals(id));
     }
 

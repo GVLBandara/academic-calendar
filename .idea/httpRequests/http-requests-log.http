@@ -3,23 +3,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-08-28T222741.200.json
-
-###
-
-DELETE http://localhost:8080/api/task/2
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-GET http://localhost:8080/api/task/2
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T222719.200.json
+<> 2023-10-11T213006.500.json
 
 ###
 
@@ -28,20 +12,28 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-08-28T222708.200.json
+<> 2023-10-11T212843.200.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T212758.200.json
 
 ###
 
 POST http://localhost:8080/api/task
 Content-Type: application/json
-Content-Length: 230
+Content-Length: 221
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "id": 2,
-  "name": "name2",
+  "title": "title2",
   "desc": "desc2",
   "status": "SCHEDULED",
   "taskType": "EXAM",
@@ -58,7 +50,80 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-08-28T222658.200.json
+<> 2023-10-11T212745.200.json
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 221
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "title2",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 232
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 6,
+  "title": "title2",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+<> 2023-10-11T212344.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T212327.200.json
+
+###
+
+PUT http://localhost:8080/api/task/2
+Content-Type: application/json
+Content-Length: 233
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 2,
+  "title": "name2",
+  "desc": "Updated",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
 
 ###
 
@@ -81,207 +146,21 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "url": "url"
 }
 
-<> 2023-08-28T215902.404.json
-
-###
-
-PUT http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T215849.400.json
-
-###
-
-PUT http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T215652.400.json
-
-###
-
-PUT http://localhost:8080/api/task/2
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T215625.404.json
-
-###
-
-PUT http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-###
-
-POST http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T215534.405.json
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T215519.200.json
-
-###
-
-POST http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T215147.405.json
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T215134.200.json
-
-###
-
-POST http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T215115.405.json
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T215057.200.json
+<> 2023-10-11T212222.500.json
 
 ###
 
 POST http://localhost:8080/api/task
 Content-Type: application/json
-Content-Length: 230
+Content-Length: 234
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "id": 3,
-  "name": "name3",
-  "desc": "desc3",
+  "id": "6",
+  "title": "title2",
+  "desc": "desc2",
   "status": "SCHEDULED",
   "taskType": "EXAM",
   "date": "2023-08-28T14:26:36.588023667",
@@ -290,292 +169,7 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "url": "url"
 }
 
-###
-
-POST http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T214829.405.json
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T214825.200.json
-
-###
-
-POST http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T214459.405.json
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T214448.200.json
-
-###
-
-POST http://localhost:8080/api/task
-Content-Type: application/json
-Content-Length: 230
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 3,
-  "name": "name3",
-  "desc": "desc3",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T214409.200.json
-
-###
-
-POST http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T214357.405.json
-
-###
-
-POST http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T214341.405.json
-
-###
-
-POST http://localhost:8080/api/task/2
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T213521.405.json
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T213410.200.json
-
-###
-
-POST http://localhost:8080/api/task/1
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T213405.405.json
-
-###
-
-POST http://localhost:8080/api/task/2
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T213343.405.json
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T213126.200.json
-
-###
-
-POST http://localhost:8080/api/task
-Content-Type: application/json
-Content-Length: 232
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T213114.200.json
-
-###
-
-POST http://localhost:8080/api/task
-Content-Type: application/json
-Content-Length: 230
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
-  "desc": "name2",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T213053.200.json
+<> 2023-10-11T212049.500.json
 
 ###
 
@@ -584,21 +178,21 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-08-28T213047.200.json
+<> 2023-10-11T212043.200.json
 
 ###
 
 POST http://localhost:8080/api/task
 Content-Type: application/json
-Content-Length: 230
+Content-Length: 234
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "id": 3,
-  "name": "name3",
-  "desc": "desc3",
+  "id": "6",
+  "title": "title2",
+  "desc": "desc2",
   "status": "SCHEDULED",
   "taskType": "EXAM",
   "date": "2023-08-28T14:26:36.588023667",
@@ -606,6 +200,8 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "dateUpdated": null,
   "url": "url"
 }
+
+<> 2023-10-11T212040.500.json
 
 ###
 
@@ -614,7 +210,133 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-08-28T213007.200.json
+<> 2023-10-11T212031.200.json
+
+###
+
+GET http://localhost:8080/api/task/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T211844.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T211837.200.json
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 234
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "6",
+  "title": "title2",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+<> 2023-10-11T211826.500.json
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 221
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "title2",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+<> 2023-10-11T211759.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T211744.200.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T210417.200.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T205220.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T203949.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T203914.200.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T203509.200.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T203355.500.json
 
 ###
 
@@ -627,28 +349,7 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
   "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-###
-
-POST http://localhost:8080/api/task
-Content-Type: application/json
-Content-Length: 230
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
+  "title": "title2",
   "desc": "desc2",
   "status": "SCHEDULED",
   "taskType": "EXAM",
@@ -657,6 +358,44 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "dateUpdated": null,
   "url": "url"
 }
+
+<> 2023-10-11T202402.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T202344.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T201736.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T200240.500.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T200235.500.json
 
 ###
 
@@ -669,37 +408,7 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
   "id": 2,
-  "name": "name2",
-  "desc": "Updated",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T212953.200.json
-
-###
-
-POST http://localhost:8080/api/task
-Content-Type: application/json
-Content-Length: 230
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 2,
-  "name": "name2",
+  "title": "title2",
   "desc": "desc2",
   "status": "SCHEDULED",
   "taskType": "EXAM",
@@ -709,58 +418,7 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "url": "url"
 }
 
-###
-
-GET http://localhost:8080/api/task
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-28T212457.200.json
-
-###
-
-POST http://localhost:8080/api/task
-Content-Type: application/json
-Content-Length: 230
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "desc2",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-###
-
-POST http://localhost:8080/api/task
-Content-Type: application/json
-Content-Length: 230
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 1,
-  "name": "name2",
-  "desc": "desc2",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
-
-<> 2023-08-28T211641.500.json
+<> 2023-10-11T200222.500.json
 
 ###
 
@@ -769,7 +427,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-08-28T211620.200.json
+<> 2023-10-11T195430.500.json
 
 ###
 
@@ -778,28 +436,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-08-28T211600.200.json
-
-###
-
-POST http://localhost:8080/api/task
-Content-Type: application/json
-Content-Length: 230
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "id": 3,
-  "name": "name2",
-  "desc": "desc2",
-  "status": "SCHEDULED",
-  "taskType": "EXAM",
-  "date": "2023-08-28T14:26:36.588023667",
-  "dateCreated": "2023-08-28T14:26:36.588046142",
-  "dateUpdated": null,
-  "url": "url"
-}
+<> 2023-10-11T164855.200.json
 
 ###
 
@@ -812,8 +449,8 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
   "id": 2,
-  "name": "name2",
-  "desc": "Updated",
+  "title": "title2",
+  "desc": "desc2",
   "status": "SCHEDULED",
   "taskType": "EXAM",
   "date": "2023-08-28T14:26:36.588023667",
@@ -822,7 +459,239 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "url": "url"
 }
 
-<> 2023-08-28T211447.500.json
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 230
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 2,
+  "name": "name2",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+<> 2023-10-11T164832.400.json
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 225
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 2,
+  "name": "",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+<> 2023-10-11T164821.400.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T164815.200.json
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 225
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 2,
+  "name": "",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+<> 2023-10-11T164437.400.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T164236.200.json
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 225
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 2,
+  "name": "",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 230
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 2,
+  "name": "name2",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T004033.200.json
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 230
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 2,
+  "name": "name2",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T003950.200.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-11T003940.200.json
+
+###
+
+GET http://localhost:8080/api/tasks
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-28T074659.200.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-28T074651.404.json
+
+###
+
+GET http://localhost:8080/api/task/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-28T073002.200.json
+
+###
+
+GET http://localhost:8080/api/task
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-28T072939.200.json
+
+###
+
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Content-Length: 230
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 2,
+  "name": "name2",
+  "desc": "desc2",
+  "status": "SCHEDULED",
+  "taskType": "EXAM",
+  "date": "2023-08-28T14:26:36.588023667",
+  "dateCreated": "2023-08-28T14:26:36.588046142",
+  "dateUpdated": null,
+  "url": "url"
+}
 
 ###
 
