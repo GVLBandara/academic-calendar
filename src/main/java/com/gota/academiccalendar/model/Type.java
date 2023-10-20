@@ -1,7 +1,7 @@
 package com.gota.academiccalendar.model;
 
 public enum Type {
-    ASSESMENT,
+    ASSESSMENT,
     ASSIGNMENT,
     EXAM,
     PRESENTATION,

@@ -1,0 +1,167 @@
+[
+  {
+    "id": null,
+    "title": "Complete Project Proposal",
+    "desc": "Draft and submit the project proposal for review",
+    "status": "IN_PROGRESS",
+    "taskType": "ASSESSMENT",
+    "date": "2023-10-12T14:00:00",
+    "dateCreated": "2023-10-11T09:30:00",
+    "dateUpdated": null,
+    "url": "https://example.com/proposal"
+  },
+  {
+    "id": null,
+    "title": "Meeting with Client",
+    "desc": "Discuss project requirements and timelines",
+    "status": "SCHEDULED",
+    "taskType": "EXAM",
+    "date": "2023-10-14T10:30:00",
+    "dateCreated": "2023-10-11T11:15:00",
+    "dateUpdated": null,
+    "url": null
+  },
+  {
+    "id": null,
+    "title": "Research Competitors",
+    "desc": "Analyze and document competitor products",
+    "status": "IN_PROGRESS",
+    "taskType": "PRESENTATION",
+    "date": "2023-10-13T16:45:00",
+    "dateCreated": "2023-10-11T14:20:00",
+    "dateUpdated": null,
+    "url": null
+  },
+  {
+    "id": null,
+    "title": "Update Website Content",
+    "desc": "Refresh website content and images",
+    "status": "COMPLETE",
+    "taskType": "VIVA",
+    "date": "2023-10-11T11:00:00",
+    "dateCreated": "2023-10-11T10:30:00",
+    "dateUpdated": "2023-10-11T14:10:00",
+    "url": "https://example.com/updates"
+  },
+  {
+    "id": null,
+    "title": "Monthly Report",
+    "desc": "Compile and send monthly progress report to stakeholders",
+    "status": "COMPLETE",
+    "taskType": "ASSESSMENT",
+    "date": "2023-10-15T15:30:00",
+    "dateCreated": "2023-10-11T15:00:00",
+    "dateUpdated": null,
+    "url": null
+  },
+  {
+    "id": null,
+    "title": "New Task 1",
+    "desc": "Description for New Task 1",
+    "status": "SCHEDULED",
+    "taskType": "ASSIGNMENT",
+    "date": "2023-10-16T09:00:00",
+    "dateCreated": "2023-10-11T09:45:00",
+    "dateUpdated": null,
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=1234"
+  },
+  {
+    "id": null,
+    "title": "New Task 2",
+    "desc": "Description for New Task 2",
+    "status": "IN_PROGRESS",
+    "taskType": "VIVA",
+    "date": "2023-10-17T14:30:00",
+    "dateCreated": "2023-10-11T11:45:00",
+    "dateUpdated": "2023-10-11T15:30:00",
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=5678"
+  },
+  {
+    "id": null,
+    "title": "New Task 3",
+    "desc": "Description for New Task 3",
+    "status": "COMPLETE",
+    "taskType": "EXAM",
+    "date": "2023-10-18T11:15:00",
+    "dateCreated": "2023-10-11T13:20:00",
+    "dateUpdated": null,
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=9876"
+  },
+  {
+    "id": null,
+    "title": "New Task 4",
+    "desc": "Description for New Task 4",
+    "status": "SCHEDULED",
+    "taskType": "PRESENTATION",
+    "date": "2023-10-19T10:45:00",
+    "dateCreated": "2023-10-11T14:40:00",
+    "dateUpdated": null,
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=3456"
+  },
+  {
+    "id": null,
+    "title": "New Task 5",
+    "desc": "Description for New Task 5",
+    "status": "IN_PROGRESS",
+    "taskType": "ASSESSMENT",
+    "date": "2023-10-20T16:00:00",
+    "dateCreated": "2023-10-11T16:25:00",
+    "dateUpdated": "2023-10-11T17:45:00",
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=6543"
+  },
+  {
+    "id": null,
+    "title": "New Task 6",
+    "desc": "Description for New Task 6",
+    "status": "SCHEDULED",
+    "taskType": "EXAM",
+    "date": "2023-10-21T15:45:00",
+    "dateCreated": "2023-10-11T18:10:00",
+    "dateUpdated": null,
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=7890"
+  },
+  {
+    "id": null,
+    "title": "New Task 7",
+    "desc": "Description for New Task 7",
+    "status": "COMPLETE",
+    "taskType": "VIVA",
+    "date": "2023-10-22T14:20:00",
+    "dateCreated": "2023-10-11T19:35:00",
+    "dateUpdated": "2023-10-11T20:45:00",
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=4321"
+  },
+  {
+    "id": null,
+    "title": "New Task 8",
+    "desc": "Description for New Task 8",
+    "status": "SCHEDULED",
+    "taskType": "PRESENTATION",
+    "date": "2023-10-23T12:30:00",
+    "dateCreated": "2023-10-11T21:50:00",
+    "dateUpdated": null,
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=8765"
+  },
+  {
+    "id": null,
+    "title": "New Task 9",
+    "desc": "Description for New Task 9",
+    "status": "IN_PROGRESS",
+    "taskType": "ASSIGNMENT",
+    "date": "2023-10-24T11:40:00",
+    "dateCreated": "2023-10-11T22:15:00",
+    "dateUpdated": "2023-10-11T23:30:00",
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=2109"
+  },
+  {
+    "id": null,
+    "title": "New Task 10",
+    "desc": "Description for New Task 10",
+    "status": "COMPLETE",
+    "taskType": "ASSESSMENT",
+    "date": "2023-10-25T14:50:00",
+    "dateCreated": "2023-10-11T23:45:00",
+    "dateUpdated": null,
+    "url": "https://lms.fas.tc.esn.ac.lk/course/view.php?id=9999"
+  }
+]
