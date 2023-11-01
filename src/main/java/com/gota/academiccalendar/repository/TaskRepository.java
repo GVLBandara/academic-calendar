@@ -12,6 +12,14 @@ import java.util.List;
 
 @Repository
 public interface TaskRepository extends ListCrudRepository<Task, Integer> {
+
+	@Query("""
+		SELECT * FROM task
+		WHERE title ILIKE :title
+		AND status ILIKE :status
+		AND task_type ILIKE :type
+	""")
+	List<Task> findAll(@Param("title")String title, @Param("status")String status, @Param("type")String type);
 	List<Task> findAllByTitleContains(String keyword);
 
 	@Query("""

@@ -36,19 +36,19 @@ public class TaskCollectionRepository {
         }
     }
 
-    @PostConstruct
-    private void init() {
-        Task t = new Task(1,
-                "title",
-                "desc",
-                Status.SCHEDULED,
-                Type.EXAM,
-                LocalDateTime.now(),
-                LocalDateTime.now(),
-                null,
-                "url");
-        taskList.add(t);
-    }
+//    @PostConstruct
+//    private void init() {
+//        Task t = new Task(1,
+//                "title",
+//                "desc",
+//                Status.SCHEDULED,
+//                Type.EXAM,
+//                LocalDateTime.now(),
+//                LocalDateTime.now(),
+//                null,
+//                "url");
+//        taskList.add(t);
+//    }
 
     public boolean existsById(int id) {
         return taskList.stream().anyMatch(c -> c.id().equals(id));

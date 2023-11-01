@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/task")
@@ -20,9 +21,15 @@ public class TaskController {
     public TaskController(TaskRepository repository) {
         this.repository = repository;
     }
+
     @GetMapping("")
-    public List<Task> findAll(){
-        return repository.findAll();
+    public List<Task> findAll(
+            @RequestParam("title")Optional<String> title,
+            @RequestParam("status") Optional<String> status,
+            @RequestParam("type") Optional<String> type
+    ){
+        String t = "%"+title.orElse("")+"%";
+        return repository.findAll(t, status.orElse("%"), type.orElse("%"));
     }
 
     @GetMapping("/{id}")
